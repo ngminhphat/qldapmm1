@@ -77,6 +77,7 @@
             // 
             textBox2.Location = new Point(256, 194);
             textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
             textBox2.Size = new Size(309, 27);
             textBox2.TabIndex = 4;
             // 
@@ -100,7 +101,7 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // Form1
+            // LoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -112,7 +113,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "LoginForm";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
