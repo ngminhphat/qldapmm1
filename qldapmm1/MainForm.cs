@@ -90,6 +90,18 @@ namespace qldapmm1
 
             czcz.Show();
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Văn_bản_pháp_lý yuqqqq = new Văn_bản_pháp_lý();
+            yuqqqq.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HoSoThamDinh vccccc = new HoSoThamDinh();
+            vccccc.Show();
+        }
     }
 
 }

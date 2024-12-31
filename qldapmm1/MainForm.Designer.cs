@@ -31,7 +31,7 @@ namespace qldapmm1
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
@@ -76,6 +76,9 @@ namespace qldapmm1
             button3 = new Button();
             tabPage4 = new TabPage();
             tabPage5 = new TabPage();
+            groupBox8 = new GroupBox();
+            button13 = new Button();
+            button14 = new Button();
             tabPage6 = new TabPage();
             groupBox6 = new GroupBox();
             toolStrip3 = new ToolStrip();
@@ -86,6 +89,9 @@ namespace qldapmm1
             button16 = new Button();
             miniToolStrip = new ToolStrip();
             toolStripLabel1 = new ToolStripLabel();
+            groupBox9 = new GroupBox();
+            button15 = new Button();
+            button17 = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabControl2.SuspendLayout();
@@ -99,10 +105,14 @@ namespace qldapmm1
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
+            tabPage4.SuspendLayout();
+            tabPage5.SuspendLayout();
+            groupBox8.SuspendLayout();
             tabPage6.SuspendLayout();
             groupBox6.SuspendLayout();
             toolStrip3.SuspendLayout();
             groupBox7.SuspendLayout();
+            groupBox9.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -158,14 +168,14 @@ namespace qldapmm1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9, Column10, Column11 });
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Window;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.Location = new Point(3, 83);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -493,9 +503,11 @@ namespace qldapmm1
             button3.TabIndex = 0;
             button3.Text = "Thêm mới";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // tabPage4
             // 
+            tabPage4.Controls.Add(groupBox9);
             tabPage4.Location = new Point(4, 29);
             tabPage4.Name = "tabPage4";
             tabPage4.Size = new Size(1208, 415);
@@ -505,12 +517,43 @@ namespace qldapmm1
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(groupBox8);
             tabPage5.Location = new Point(4, 29);
             tabPage5.Name = "tabPage5";
             tabPage5.Size = new Size(1208, 415);
             tabPage5.TabIndex = 4;
-            tabPage5.Text = "Văn bản pháp lý\n\n\n";
+            tabPage5.Text = "Quản lý văn bản pháp lý";
             tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            groupBox8.Controls.Add(button13);
+            groupBox8.Controls.Add(button14);
+            groupBox8.Location = new Point(0, 3);
+            groupBox8.Name = "groupBox8";
+            groupBox8.Size = new Size(245, 106);
+            groupBox8.TabIndex = 3;
+            groupBox8.TabStop = false;
+            groupBox8.Text = "Quản lý văn bản pháp lý";
+            // 
+            // button13
+            // 
+            button13.Location = new Point(103, 60);
+            button13.Name = "button13";
+            button13.Size = new Size(120, 28);
+            button13.TabIndex = 1;
+            button13.Text = "Xem danh sách";
+            button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            button14.Location = new Point(6, 60);
+            button14.Name = "button14";
+            button14.Size = new Size(91, 28);
+            button14.TabIndex = 0;
+            button14.Text = "Thêm mới";
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // tabPage6
             // 
@@ -613,6 +656,35 @@ namespace qldapmm1
             toolStripLabel1.Size = new Size(23, 23);
             toolStripLabel1.TextAlign = ContentAlignment.BottomCenter;
             // 
+            // groupBox9
+            // 
+            groupBox9.Controls.Add(button15);
+            groupBox9.Controls.Add(button17);
+            groupBox9.Location = new Point(0, 3);
+            groupBox9.Name = "groupBox9";
+            groupBox9.Size = new Size(245, 106);
+            groupBox9.TabIndex = 4;
+            groupBox9.TabStop = false;
+            groupBox9.Text = "Quản lý văn bản pháp lý";
+            // 
+            // button15
+            // 
+            button15.Location = new Point(103, 60);
+            button15.Name = "button15";
+            button15.Size = new Size(120, 28);
+            button15.TabIndex = 1;
+            button15.Text = "Xem danh sách";
+            button15.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            button17.Location = new Point(6, 60);
+            button17.Name = "button17";
+            button17.Size = new Size(91, 28);
+            button17.TabIndex = 0;
+            button17.Text = "Thêm mới";
+            button17.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -638,12 +710,16 @@ namespace qldapmm1
             groupBox3.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
+            tabPage4.ResumeLayout(false);
+            tabPage5.ResumeLayout(false);
+            groupBox8.ResumeLayout(false);
             tabPage6.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
             toolStrip3.ResumeLayout(false);
             toolStrip3.PerformLayout();
             groupBox7.ResumeLayout(false);
+            groupBox9.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -702,6 +778,12 @@ namespace qldapmm1
         private GroupBox groupBox7;
         private Button button16;
         private ToolStripButton toolStripButton5;
+        private GroupBox groupBox8;
+        private Button button13;
+        private Button button14;
+        private GroupBox groupBox9;
+        private Button button15;
+        private Button button17;
     }
 
 }
